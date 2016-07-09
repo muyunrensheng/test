@@ -1,0 +1,11 @@
+<div class="banner-inner">
+    <ul>
+        <li ms-repeat="pic" ms-css-background="el.href"></li>
+    </ul>
+</div>
+<dl>
+    <dd ms-repeat="pic" ms-class="active:$first"></dd>
+</dl>
+<div class="banner-direct-tag banner-left" ms-if="directTag" ms-on-click="clickArrow('left')"></div>
+<div class="banner-direct-tag banner-right" ms-if="directTag" ms-on-click="clickArrow('right')"></div>
+

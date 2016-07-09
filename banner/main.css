@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+dd{
+    list-style:none;
+}
+.banner-box{
+    position: relative;
+    overflow:hidden;
+    width:500px;
+    height:100px;
+}
+.banner-inner{
+    width:100000px;
+    height:100%;
+    zoom:1;
+}
+.banner-inner:after{
+    content:'';
+    clear:both;
+    display:block;
+}
+.banner-box ul{
+    height:100%;
+    float:left;
+}
+.banner-box li{
+    float:left;
+    display:inline;
+    height:100%;
+}
+.banner-box dl{
+    height:12px;
+    position: relative;
+    bottom:30px;
+    margin:0 auto;
+}
+.banner-box dd{
+    width:12px;
+    height:12px;
+    float:left;
+    display:inline;
+    background:#fff;
+    margin:0 3px;
+    border-radius:50%;
+    cursor:pointer;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+.banner-box dd.active{
+    background:#ccc;
+}
+.banner-direct-tag{
+    position: absolute;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+.banner-left{
+    background:url(./images/arrows-left-icon.png) center no-repeat;
+    left:20px;
+    display:none;
+}
+.banner-right{
+    background:url(./images/arrows-right-icon.png) center no-repeat;
+    right:20px;
+    display:none;
+}
+.banner-left.active{
+    background:url(./images/arrows-left-icon-hover.png) center no-repeat;
+}
+.banner-right.active{
+    background:url(./images/arrows-right-icon-hover.png) center no-repeat;
+}
+
+
+

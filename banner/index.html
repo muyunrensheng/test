@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="avalon.js"></script>
+    <script>
+        avalon.config({
+            paths: {
+                jquery: "jquery-1.12.3.min.js"
+            },
+            shim: {
+                jquery: {
+                    exports: "jQuery"
+                }
+            }
+        });
+
+        require(['banner'],function(){
+            var test = avalon.define({
+                $id:'test',
+                $opts:{
+                    pic:[
+                        {
+                            href:'#0ff'
+                        },
+                        {
+                            href:'#f0f'
+                        },
+                        {
+                            href:'#ff0'
+                        },
+                        {
+                            href:'#ccc'
+                        }
+                    ],
+                    speed:0.3,
+                    interval:1
+                },
+                $skipArray:['banner']
+            });
+            avalon.scan();
+        });
+
+
+
+
+    </script>
+</head>
+<body ms-controller="test">
+    <div class="banner-box" ms-widget="banner,$,$opts"></div>
+</body>
+</html>
